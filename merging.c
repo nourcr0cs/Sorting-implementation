@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define TYPE int //aprs nbdloh depends 
+
 void print_array(TYPE A[], int n) {
     /*
     A : the array to be printed
