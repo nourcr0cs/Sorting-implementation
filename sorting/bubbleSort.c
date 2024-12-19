@@ -1,22 +1,21 @@
 #include <stdio.h>
 #include "sortHelpers.h"
 
-void bubble_sort(int* arr, int n) {
+void bubble_sort(int* arr, int sz) {
     int i, j;
     int swapped;
 
-    for (i = 0; i < n - 1; i++) {
+    for (i = 0; i < sz - 1; i++) {
         swapped = 0;
 
-        for (j = 0; j < n - i - 1; j++) {
-            // Use order_is_broken for comparison
+        for (j = 0; j < sz - i - 1; j++) {
+            //to compare
             if (order_is_broken(arr, j, j + 1)) {
-                // Use swap_items to swap elements
+                //the ordinary swap once needed
                 swap_items(arr, j, j + 1);
                 swapped = 1;
             }
         }
-
         if (!swapped) {
             break;
         }
