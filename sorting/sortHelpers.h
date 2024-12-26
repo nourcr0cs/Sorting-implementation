@@ -1,6 +1,9 @@
 #ifndef SORT_HELPERS_H
 #define SORT_HELPERS_H
 
+extern int nbComp;
+extern int nbPerm;
+
 typedef struct Node {
     char* word;
     struct Node* next; 

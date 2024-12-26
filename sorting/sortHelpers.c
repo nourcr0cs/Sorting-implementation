@@ -65,4 +65,3 @@ void add_word(Node** head, const char* word) {
     *head = new_node;
 }
 
-
