@@ -4,6 +4,10 @@
 #include "sorting/sortHelpers.h"
 #include "sorting/sorting_algorithms.h"
 
+
+int nbComp = 0;
+int nbPerm = 0;
+
 void print_menu() {
     printf("Choose a data structure to sort:\n");
     printf("1. Array of integers\n");
