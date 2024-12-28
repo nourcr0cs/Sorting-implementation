@@ -20,6 +20,7 @@ void bubble_sort(int* arr, int sz) {
                 swap_items(arr, j, j + 1);
                 nbPerm++; 
                 swapped = 1;
+                print_array(arr, sz);
             }
         }
 

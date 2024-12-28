@@ -17,4 +17,5 @@ int order_is_broken_list(const char* a, const char* b);
 void print_list(Node* head);
 void print_matrix(char* matrix[], int rows);
 void add_word(Node** head, const char* word);
+void generate_random_array(int* arr, int size);
 #endif 

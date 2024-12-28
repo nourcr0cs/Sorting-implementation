@@ -10,6 +10,14 @@ void print_array(int arr[], int sz) {
     printf("\n");
 }
 
+
+void generate_random_array(int* arr, int size) {
+    for (int i = 0; i < size; i++) {
+        arr[i] = rand() % 10000; 
+    }
+}
+
+
 void swap_items(int* arr, int i, int j) {
     int temp = arr[i];
     arr[i] = arr[j];
