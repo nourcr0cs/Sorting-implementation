@@ -35,12 +35,13 @@ int main() {
             return 1;
         }
 
-        printf("Enter %d elements:\n", n);
-        for (int i = 0; i < n; i++) {
+        printf("%d elements are being entered automatically... :\n", n);
+        generate_random_array(arr, n);
+        /*for (int i = 0; i < n; i++) {
             printf("Element %d: ", i + 1);
             scanf("%d", &arr[i]);
-        }
-
+        }*/
+      //menu to make the user choose the sorting algorithm
         printf("Choose a sorting algorithm:\n");
         printf("1. Quick Sort\n");
         printf("2. Merge Sort\n");
@@ -137,7 +138,11 @@ int main() {
         printf("2. Merge Sort\n");
         printf("Enter your choice: ");
         scanf("%d", &sortChoice);
+            
+        printf("Original matrix:\n");
+        print_matrix(matrix, rows);
 
+        
             switch (sortChoice) {
             case 1:
                 sort_matrix(matrix, rows, 1);
@@ -152,8 +157,6 @@ int main() {
                 return 1;
             }
 
-        printf("Original matrix:\n");
-        print_matrix(matrix, rows);
         printf("Sorted matrix of characters row by row:\n");
         print_matrix(matrix, rows);
         for (int i = 0; i < rows; i++) {
